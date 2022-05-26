@@ -28,8 +28,8 @@ public class SampleBM {
     public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
     public static BrowserMobProxy proxy;
     public static Tunnel t;
-    public String username = "";
-    public String accesskey = "";
+    public String username = System.getenv("LT_USERNAME") == null ? "Your LT Username" : System.getenv("LT_USERNAME");
+    public String accesskey = System.getenv("LT_ACCESS_KEY") == null ? "Your LT AccessKey" : System.getenv("LT_ACCESS_KEY");
     public String gridURL = "@hub.lambdatest.com/wd/hub";
 
     public static String  portn;
