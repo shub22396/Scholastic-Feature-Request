@@ -80,7 +80,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
-                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                        <suiteXmlFile>test.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
